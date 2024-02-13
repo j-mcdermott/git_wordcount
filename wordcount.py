@@ -1,6 +1,9 @@
 import sys
 from collections import Counter
 
+# Importing text file via arguemnt
+# Cleaning text by making all lowercase and removing special characters
+
 with open(sys.argv[1], 'r') as file:
     lines = []
     for line in file:
@@ -10,20 +13,32 @@ with open(sys.argv[1], 'r') as file:
         line = line.replace("!", "")
         lines.append(line)
 
+
+# Breaking text into separate lines 
+
 line1 = lines[0]
 line2 = lines[1]
 line3 = lines[2]
 line4 = lines[3]
+
+
+# Breaking each line into separate words 
 
 words1 = line1.split(" ")
 words2 = line2.split(" ")
 words3 = line3.split(" ")
 words4 = line4.split(" ")
 
+
+# Counting words on each line
+
 counts = Counter(words1)
 counts2 = Counter(words2)
 counts3 = Counter(words3)
 counts4 = Counter(words4)
+
+
+# Creating variables for eflif section
 
 userinput = int(sys.argv[2])
 dupwords = ""
@@ -34,6 +49,9 @@ dupcount = 0
 dupcount2 = 0
 dupcount3 = 0
 dupcount4 = 0
+
+
+# elif section directed by user input commandline argument
 
 if userinput == 1:
     print("LINE 1", "\n", "Total words: ", int(len(words1)), "\n")
