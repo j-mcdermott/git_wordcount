@@ -1,6 +1,9 @@
 User Guide
 
-Open a terminal from GIT_WORDCOUNT directory. Run the script with the 2 arguments.
+Make sure badpoems.txt and wordcount.py are in the same directory. Open a terminal in that directory.
+If .zip downloaded from github, open a terminal from git_wordcount-main directory.
+
+Run the .py with these 2 arguments:
 
 Argument 1 = text file
 Argument 2 = frequency of repeating words per line (currently only accepts integers 1, 2, 3)
