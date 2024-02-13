@@ -36,13 +36,10 @@ dupcount3 = 0
 dupcount4 = 0
 
 if userinput == 1:
-    #dupcount = int(len(words1)) + int(len(words2)) + int(len(words3)) + int(len(words4))
-    #print(dupcount)
     print("LINE 1", "\n", "Total words: ", int(len(words1)), "\n")
     print("LINE 2", "\n", "Total words: ", int(len(words2)), "\n")
     print("LINE 3", "\n", "Total words: ", int(len(words3)), "\n")
     print("LINE 4", "\n", "Total words: ", int(len(words4)), "\n")
-
 elif userinput == 2:
     dupwords = [key for key, value in counts.items() if value >= 2]
     dupwords2 = [key for key, value in counts2.items() if value >= 2]
